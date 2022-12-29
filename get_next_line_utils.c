@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 17:22:25 by snaggara          #+#    #+#             */
-/*   Updated: 2022/12/29 05:06:47 by snaggara         ###   ########.fr       */
+/*   Updated: 2022/12/29 18:31:14 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,6 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (sbis);
 }
 
-
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
@@ -76,5 +75,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (1);
 }
 
-
-
+char	*free_line_and_static(t_static *data_static, t_data_line *data_line)
+{
+	free_data_static(data_static);
+	free(data_line);
+	return (NULL);
+}
