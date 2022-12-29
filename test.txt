@@ -1,7 +1,11 @@
-Samir
-Ca va ?
-La prochaine ligne est vide !
-
-VOila !
-La je met un espacement à la fin  
-La je met un \0 xD
+Samir est sur la ligne 1
+Samir est sur la ligne 2
+Samir est sur la ligne 3
+Samir est sur la ligne 4
+Samir est sur la ligne 5
+Samir est sur la ligne 6
+Samir est sur la ligne 7
+Samir est sur la ligne 8
+Samir est sur la ligne 9
+Samir est sur la ligne 10
+ABCDE
