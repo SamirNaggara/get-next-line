@@ -1,0 +1,7 @@
+Salut Samir
+Ca va ?
+La prochaine ligne est vide !
+
+VOila !
+La je met un espacement à la fin  
+La je met un \0 xD
