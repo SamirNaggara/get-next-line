@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 18:29:30 by snaggara          #+#    #+#             */
-/*   Updated: 2022/12/29 18:31:51 by snaggara         ###   ########.fr       */
+/*   Updated: 2022/12/29 19:39:47 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_data_line
 	int				length_line;
 }t_data_line;
 typedef struct s_static {
-	char	buffer[BUFFER_SIZE + 1];
+	char	buffer[BUFFER_SIZE];
 	int		cursor_beg;
 	int		cursor_end;
 	int		nb_octet;

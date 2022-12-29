@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 17:22:25 by snaggara          #+#    #+#             */
-/*   Updated: 2022/12/29 18:31:14 by snaggara         ###   ########.fr       */
+/*   Updated: 2022/12/29 22:26:51 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 }
 
 char	*free_line_and_static(t_static *data_static, t_data_line *data_line)
+#include "get_next_line.h"
 {
 	free_data_static(data_static);
 	free(data_line);
