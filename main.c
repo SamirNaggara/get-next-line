@@ -3,12 +3,12 @@
 int	main()
 {
 	int 	fd;
-	char	*chaine;
 
 	fd = open("test.txt", O_RDONLY);
 	if (!fd)
 		return (0);
 
-	chaine = get_next_line(fd);
-	printf("The next line : %s", chaine);
+	printf("The next line : %s\n", get_next_line(fd));
+	printf("The next line : %s\n", get_next_line(fd));
+
 }

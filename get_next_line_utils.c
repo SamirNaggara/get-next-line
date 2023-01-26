@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 17:22:25 by snaggara          #+#    #+#             */
-/*   Updated: 2023/01/26 03:24:43 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/01/26 13:10:46 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,4 +163,22 @@ void	ft_move_sens1(char *destbis, char *srcbis, size_t n)
 		destbis[i] = srcbis[i];
 		i++;
 	}
+}
+
+
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char	*result;
+	size_t	size;
+
+	if (!s1 || !s2)
+		return (NULL);
+	size = ft_strlen(s1) + ft_strlen(s2);
+	result = malloc(sizeof(char) * (size + 1));
+	if (!result)
+		return (NULL);
+	ft_memset(result, 0, size + 1);
+	ft_strlcat(result, s1, ft_strlen(s1) + 1);
+	ft_strlcat(result, s2, size + 1);
+	return (result);
 }

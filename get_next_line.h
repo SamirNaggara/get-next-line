@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 18:29:30 by snaggara          #+#    #+#             */
-/*   Updated: 2023/01/26 03:14:53 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/01/26 13:21:36 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 
 typedef struct s_static {
-	char	buffer[BUFFER_SIZE + 1];
+	char	*buffer;
 	int		nb_octet_lu;
 }t_static;
 
@@ -31,8 +31,9 @@ size_t		ft_strlen(const char *str);
 size_t		ft_strlcpy(char *dest, const char *src, size_t size);
 size_t		ft_strlcat(char *dest, const char *src, size_t size);
 char		*ft_strnstr(const char *big, const char *little, size_t len);
-void	*ft_memmove(void *dest, const void *src, size_t n);
-void	ft_move_sens1(char *destbis, char *srcbis, size_t n);
+void		*ft_memmove(void *dest, const void *src, size_t n);
+void		ft_move_sens1(char *destbis, char *srcbis, size_t n);
+char		*ft_strjoin(char const *s1, char const *s2);
 
 
 #endif
