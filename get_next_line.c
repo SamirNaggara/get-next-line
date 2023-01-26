@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 16:12:14 by snaggara          #+#    #+#             */
-/*   Updated: 2022/12/29 22:44:32 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/01/26 01:30:56 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ static struct
 	buffer[BUFFER_SIZE]
 	buffer_memory
 	cursor 
-	nb_octet_read
+	nb_octet_read 
 	is_finish
 
 
